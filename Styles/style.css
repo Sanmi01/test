@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/* navigation bar */
+
+.header-nav {
+    padding-right: 150px;
+}
+
+
+/* BUTTON */
+.btn-1 {
+    background: #274690;
+}
+
+
+/* Footer Section*/
+
+.footer-section {
+    background: rgba(214, 242, 255, 0.3);
+}
+
+
+
+
+@media(max-width: 768px) {
+    .nav-header {
+        justify-content: center;
+    }
+}
