@@ -54,6 +54,16 @@ border-radius: 5px;
 padding: 0 60px;
 }
 
+/* styles for term for us and privacy policy */
+.term {
+    letter-spacing: 3px;
+}
+
+.policy-section {
+    letter-spacing: 3px;
+}
+
+
 /* Footer Section*/
 
 .footer-section {
