@@ -9,6 +9,38 @@
     <title>Search4me</title>
   </head>
   <body>
+    <header>
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/logo.png" alt="" width="100" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 header-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-body" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">Follow up case </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">About us </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">Contact Us </a>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-1 btn-sm text-white">Submit report</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <main class="container-fluid p-5">
         <!-- <h1>Follow Up On A Case</h1> -->
         <div class="row">
@@ -35,8 +67,8 @@
               </div>
           </div>
             <div class="col-lg-8 col-md-7">
-              <p>Case ID: ABCDZ1234 <span>Open</span> <img src="./images/Verified.png" /> Verified</p>
-              <p>Case Report:</p>
+              <p class="case-info"><span class="fw-bold">Case ID:</span> <span>ABCDZ1234</span> <span>Open</span> <img src="./images/Verified.png" /> <sub>Verified</sub></p>
+              <p class="fw-bold">Case Report:</p>
               <div class="outer-box p-3 m-2">
                 <div class="middle-box p-3 m-2">
                 <div class="inner-box p-3 m-2">
@@ -53,8 +85,65 @@
         </div>
     </main>
 
-
+    <footer>
+      <div class="footer-section">
+          <div class="container">
+              <div class="row d-flex justify-content-around">
+                  <div class="col-md-4 col-12 pt-5 mt-2 align-self-end">
+                    <a class="navbar-brand ps-5" href="index.html">
+                      <img src="./images/logo.png" alt="" width="120" height="24">
+                    </a>
+                  </div>
+              
+                  <div class="col-md-4 col-12 footer-links pt-4">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link text-body fw-normal" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body fw-normal" href="#">Follow up case </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body fw-normal" href="#">About us </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body fw-normal" href="#">Contact Us </a>
+                      </li>
+                    </ul>
+                  </div>
+              
+                  <div class="col-md-4 col-12 pt-4 pb-2">
+                    <h6 class="fw-normal">Follow us on</h6>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-body list" href="#"><img src="./images/facebook.png" alt="" width="30" height="24"><span class="p-2 fw-normal">Facebook</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body list" href="#"><img src="./images/twitter.png" alt="" width="30" height="24"><span class="p-2 fw-normal">Twitter</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body" href="#"><img src="./images/instagram.png" alt="" width="30" height="24"><span class="p-2 fw-normal">Instagram</span></a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+    
+                  <div class="me-md-auto text-center text-md-start ps-5">
+                      <div class="copyright text-center d-flex justify-content-center ">
+                          <a class="nav-link text-dark fw-normal" href="">Terms of Use</a>
+                          <a class="nav-link text-dark fw-normal" href="">Privacy Policy</a>
+                      </div>
+                  </div>
+                  <div class="me-md-auto text-center text-md-start ps-5 pt-2 pb-4">
+                      <div class="copyright text-center fw-normal">
+                          © 2021 search4Me Lagos, Nigeria
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="./js/script.js"></script>
   </body>
 </html>
