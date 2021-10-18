@@ -8,6 +8,10 @@ html {
     font-size: 14px;
 }
 
+#followUpPage ul {
+    padding: 0rem;
+}
+
 .info-box {
     background: #FDFDFD;
 border: 2px solid #C4C4C4;
@@ -114,5 +118,5 @@ color: white;
 padding: 9px;
 border-radius: 50%;
 top: -15px;
-font-size: 32px;
+font-size: 28px;
 }
