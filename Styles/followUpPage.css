@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
+
+
 *, body, html {
     padding: 0;
     margin: 0;
@@ -6,6 +9,10 @@
 
 html {
     font-size: 14px;
+}
+
+.header-nav {
+    padding-right: 150px;
 }
 
 #followUpPage ul {
@@ -37,6 +44,10 @@ border-radius: 5px;
 
 .case-info span:nth-child(1) {
     font-size: 24px;
+}
+
+.btn-1 {
+    background: #274690;
 }
 
 .case-info span:nth-child(2) {
