@@ -30,7 +30,7 @@ let html = ""
 
 updates.forEach( (e, index) => {
     html +=`
-    <div class="p-3 m-3">
+    <div class="p-3 m-3 update-info">
         <div class="d-flex justify-content-between">
             ${index == 0? "<h5>Latest Update!</h5>": "<h5>Previous Update!</h5>"}
             <p><button class="edit">Edit</button><button class="delete">Delete</button></p>
