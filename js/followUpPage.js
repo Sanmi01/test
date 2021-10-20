@@ -6,6 +6,7 @@ const updateButton = document.getElementById("update-button");
 const messageInfo = document.getElementById("message-info")
 const submitUpdate = document.getElementById("submit-update")
 const imgPreviewPanel = document.getElementById("img-preview-panel")
+
 let html = ""
 let imgPreviewHtml = ""
 let imgUploadArray = []
@@ -33,33 +34,7 @@ let updates = [
 ]
 
 
-updates.forEach( (e, index) => {
-    html +=`
-    <div class="p-3 m-3 update-info">
-        <div class="d-flex justify-content-between">
-            ${index == 0? "<h5>Latest Update!</h5>": "<h5>Previous Update!</h5>"}
-            <p><button class="edit">Edit</button><button class="delete">Delete</button></p>
-        </div>
-        <div class="update-info p-4 inner-box">
-            <p>${e.message}</p>
-            ${generateImageURL(e.images)}
-        </div>
-        <div class="row updates-details">
-            <div class="col-4 p-4">
-                <img class="" src="../images/police logo.png"/>
-            </div>
-            <div class="col-8 p-4">
-                    <p>Updated by Inspector Buhari Jubril</p>
-                    <p>Agency: Nigeria Police Force; Lagos State Police Command.</p>
-                    <p>Time: ${e.time}</p>
-                    <p>Date: ${e.date}</p>
-            </div>
-        </div>
-    </div>
-    `
 
-    updatesSection.innerHTML = html
-})
 
 // let a = document.getElementById("img-section")
 // updates.forEach(e => {
@@ -115,38 +90,9 @@ submitUpdate.addEventListener("click", () => {
     
         updates.unshift(updateObject)
         updatesNumber.textContent = updates.length
-        console.log(updates)
-        html = ""
-        updates.forEach( (e, index) => {
-            html +=`
-            <div class="p-3 m-3 update-info">
-                <div class="d-flex justify-content-between">
-                    ${index == 0? "<h5>Latest Update!</h5>": "<h5>Previous Update!</h5>"}
-                    <p><button class="edit">Edit</button><button class="delete">Delete</button></p>
-                </div>
-                <div class="update-info p-4 inner-box">
-                    <p>${e.message}</p>
-                    ${generateImageURL(e.images)}
-                </div>
-                <div class="row updates-details">
-                    <div class="col-4 p-4">
-                        <img class="" src="../images/police logo.png"/>
-                    </div>
-                    <div class="col-8 p-4">
-                            <p>Updated by Inspector Buhari Jubril</p>
-                            <p>Agency: Nigeria Police Force; Lagos State Police Command.</p>
-                            <p>Time: ${e.time}</p>
-                            <p>Date: ${e.date}</p>
-                    </div>
-                </div>
-            </div>
-            `
-        
-            updatesSection.innerHTML = html
-        })
+        displayHTML()
     }
 
-    
 })
 
 
@@ -167,3 +113,51 @@ fReader.onloadend = function(event){
     imgPreviewPanel.innerHTML = imgPreviewHtml
 }
 })
+
+
+function displayHTML() {
+    html = ""
+    updates.forEach( (e, index) => {
+        html +=`
+        <div class="p-3 m-3 update-info">
+            <div class="d-flex justify-content-between">
+                ${index == 0? "<h5>Latest Update!</h5>": "<h5>Previous Update!</h5>"}
+                <p><button class="edit">Edit</button><button class="delete">Delete</button></p>
+            </div>
+            <div class="update-info p-4 inner-box text-center">
+                <p>${e.message}</p>
+                ${generateImageURL(e.images)}
+            </div>
+            <div class="row updates-details">
+                <div class="col-4 p-4">
+                    <img class="" src="../images/police logo.png"/>
+                </div>
+                <div class="col-8 p-4">
+                        <p>Updated by Inspector Buhari Jubril</p>
+                        <p>Agency: Nigeria Police Force; Lagos State Police Command.</p>
+                        <p>Time: ${e.time}</p>
+                        <p>Date: ${e.date}</p>
+                </div>
+            </div>
+        </div>
+        `
+    })
+    updatesSection.innerHTML = html
+    updatesNumber.textContent = updates.length
+    deleteButton()
+}
+
+
+function deleteButton() {
+    let deleteBtn = document.querySelectorAll('.delete')
+    for (let i = 0; i < deleteBtn.length; i++) {
+        deleteBtn[i].addEventListener('click', () => {
+           updates.splice(i, 1)
+           html = ""
+           displayHTML()
+        })
+        
+    }
+}
+
+displayHTML()
