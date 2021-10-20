@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./report/report.css">
 
     <title>search4Me</title>
   </head>
@@ -42,6 +42,131 @@
       </div>
     </header>
 
+    <form action="" >
+
+      <div class="container m-2">
+          <div class="m-3">
+              <h1 class="">Report A New Case</h1>
+          </div>
+          <div class="container">
+              <div class=" m-2 Report-header rounded-end">
+                  <h5 class="text-white m-3 py-2 text-center">Reporter Information</h5>
+              </div>
+  
+      
+              <div class="col-12 row gap-2">
+                  <input type="text" class="col-9  border border-2 rounded-3 py-1" value="" placeholder="Surname">
+             
+                  <input type="text" class=" col-9 border border-2 rounded-3 py-1" value="" placeholder="First Name" >
+          
+                  <input type="text" class=" col-9 border border-2 rounded-3 py-1 " value="" placeholder="Middle Name">
+          
+                  <input type="email" class="col-9  border border-2 rounded-3 py-1" value="" id="email" placeholder="Email">
+             
+                  <input type="tel" id="phone" class=" col-9 border border-2 rounded-3 py-1" value="" placeholder="+234 | ">
+              </div>
+
+          </div>
+
+          <div class="container">
+              <div class="m-2 Report-header rounded-end">
+                  <h5 class="text-white m-3 py-2 text-center">Victim Information</h5>
+              </div>
+
+              <div class="col-12 row gap-2">
+
+                  <input type="text" class="col-9 border border-2 rounded-3 py-1" value="" placeholder="Surname">
+             
+                  <input type="text" class=" col-9 border border-2 rounded-3 py-1" value="" placeholder="First Name" >
+          
+                  <input type="text" class=" col-9 border border-2 rounded-3 py-1 " value="" placeholder="Middle Name">
+
+                  <input type="email" class="col-9 border border-2 rounded-3 py-1" value="" placeholder="Age">
+
+                  <div class=" mx-1 my-2 px-1">
+                      <label for="Gender" class="fw-bold">Gender:</label>
+                      <input type="radio"  class="mx-2"name="gender" value="male" checked> Male
+                      <input type="radio" class="mx-2" name="gender" value="female"> Female
+                  </div>
+
+                  <input type="text" class="col-9 border border-2 rounded-3 py-1" value="" placeholder="Occupation">
+             
+                  <input type="text" class=" col-9 border border-2 rounded-3 py-1" value="" placeholder="Address" >
+          
+                  <input type="tel" id="phone" class=" col-9 border border-2 rounded-3 py-1 " value="" placeholder="+234 |">
+
+                  <input type="text" class="col-9 border border-2 rounded-3 py-1" value="" placeholder="Last Known Location">
+
+                  <input type="date" class=" col-9 border border-2 rounded-3 py-1" value="" placeholder="Date Last Seen" >
+                  
+              </div>
+          </div>
+
+          <div class="container">
+              <div class="m-2 Report-header rounded-end">
+                  <h5 class="text-white m-3 py-2 text-center">Evidence</h5>
+              </div>
+
+              <div class="bg-danger m-2 evidence rounded-end p-2 text-white">
+                  <p>Note: You are to provide: </p>
+                  <p>* A detailed report of the case</p> 
+                  <p>* Upload any visual evidence if available.</p>
+              </div>
+
+              <div class="col-9 row  gap-2">
+                  <p class="fw-bold my-1">Report</p>
+                  <textarea name="message" id="" class=" border border-2 rounded-3 py-1" cols="30" rows="4" placeholder="Add your report here..."></textarea>
+                  <div class="d-flex flex-row gap-2 col-md-4 col-12">
+                      <p>Time: 5:00 PM </p>
+                      <p>Date: 1-06-2021</p>
+                  </div>
+              </div>
+
+              <div class="d-flex">
+                  <div class=" d-flex flex-row">
+                    <button type="button" class="btn btn btn-sm text-white mx-5">Submit report</button>
+                  </div>
+                  <div class="flex-row">
+                      <input type="file" name="filename" id="filename" class="px-2 py-1 border border-dark border-1 m-2" placeholder="Upload image/video">
+                  </div>
+                  <img src="./images/Vector (3).png" alt="" width="20px" height="20px">
+
+              </div>
+
+              <div class="d-flex justify-content-center">
+                  <div class=" d-flex flex-row">
+                      <img src="./images/Vector (4).png"  alt="" width="20px" height="20px" srcset="">
+                      <p class="d-flex flex-column">add other images(s)/Videos</p>
+                  </div>
+              </div>
+
+              <div class="d-flex justify-content-end"> 
+                  <ul class="d-flex flex-column col-12">
+                      <li>File type accepted: image (JPEG or PNG), Video (mp4) </li>
+                      <li>Max upload file size: image (3MB), Video (25MB)</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="m-3" class="checkbox">
+              <input type="checkbox" checked>
+              <label for="" >Agree to our terms of use</label><br>
+              <input type="checkbox" checked>
+              <label for="" checked>Agree to our privacy policy</label><br>
+              <input type="checkbox" checked>
+              <label for="" style="display: inline" checked>Notify me of new Updates regarding this case.</label>
+          </div>
+
+          <div class="d-flex justify-content-end p-3"> 
+              <div class="d-flex flex-row col-md-4 col-12 gap-2">
+                  <a class="btn btn-primary fs-5" href="index.html" role="button">Back</a>
+                  <a class="btn btn-primary fs-5" href="reportcasesuccessfulpage.html" role="button">Submit</a>
+              </div>
+          </div>
+          
+      </div>  
+      
+  </form>
 
     <footer>
       <div class="footer-section">
