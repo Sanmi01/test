@@ -11,13 +11,20 @@ html {
     font-size: 14px;
 }
 
-.header-nav {
-    padding-right: 150px;
-}
+
 
 #followUpPage ul {
     padding: 0rem;
 }
+
+.nav-link, .nav-item {
+    display: inline-block;
+    color: black !important;
+}
+
+.btn {
+    background-color: #274690;
+  }
 
 .info-box {
     background: #FDFDFD;
@@ -241,6 +248,10 @@ border-radius: 8px;
     transform: translate(-50%, -50%);
     max-width: 100%;
     width: 800px;
+}
+
+footer {
+    background: rgba(214, 242, 255, 0.3);
 }
 
 @media only screen and (max-width: 450px){
