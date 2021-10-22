@@ -20,6 +20,7 @@ let updates = [
 ]
 
 let updatesSection = document.getElementById("updates")
+const updateButton = document.getElementById("update-button");
 let html = ""
 
 // let bd= ""
@@ -34,13 +35,13 @@ updates.forEach( (e, index) => {
         <div class="d-flex justify-content-between">
             ${index == 0? "<h5>Latest Update!</h5>": "<h5>Previous Update!</h5>"}
         </div>
-        <div class="update-info p-4 inner-box">
+        <div class="update-info p-4 inner-box text-center">
             <p>${e.message}</p>
             ${generateImageURL(e.images)}
         </div>
         <div class="row updates-details">
             <div class="col-4 p-4">
-                <img class="" src="../images/police logo.png"/>
+                <img class="" src="./images/police logo.png"/>
             </div>
             <div class="col-8 p-4">
                     <p>Updated by Inspector Buhari Jubril</p>
@@ -70,8 +71,16 @@ function generateImageURL (images) {
     let generatedHTML = ''
 
     images.forEach(image => {
-        generatedHTML = generatedHTML + `<img src="../images/${image}">`
+        generatedHTML = generatedHTML + `<img src="./images/${image}">`
     })
 
     return generatedHTML
 }
+
+updateButton.addEventListener('click', () => {
+    if( updatesSection.style.display == "none") {
+        updatesSection.style.display = "block";
+    } else {
+        updatesSection.style.display = "none";
+    }
+})
