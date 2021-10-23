@@ -187,13 +187,6 @@ function editButton() {
             let closeModalButton = document.getElementById("close-update-button")
             
             editModalButton.addEventListener('click', () => {
-<<<<<<< HEAD
-                console.log(i)
-                updates[i].message = editUpdateInfo.value
-                updates[i].dateEdited = `${new Date().toISOString().replace(/T.*/,'').split('-').reverse().join('-')} at ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: true}).toUpperCase()}`
-                editSection.style.display = "none"
-                displayHTML()
-=======
 
                 if(editUpdateInfo.value == "") {
                     alert("Update cannot be empty")
@@ -206,7 +199,6 @@ function editButton() {
 
 
                 
->>>>>>> 03554399920d5dc2d61257854613a80e5afd945f
 
             })
 
