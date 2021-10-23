@@ -12,6 +12,15 @@ html {
     font-size: 14px;
 }
 
+.navbar-brand {
+    flex: 0.8;
+}
+
+.navbar-collapse {
+    flex: 2;
+}
+
+
 .form {
     position: relative
 }
@@ -40,10 +49,6 @@ html {
     background: rgba(239, 235, 235, 0.5);
 }
 
-.form-input:focus {
-    box-shadow: none;
-    border: none;
-}
 
 .fa-bell {
     color: black;
