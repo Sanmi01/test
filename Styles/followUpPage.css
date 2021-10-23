@@ -50,6 +50,10 @@ html {
 }
 
 
+.search-div img {
+    width: 50px;
+}
+
 .fa-bell {
     color: black;
 } 
@@ -297,11 +301,31 @@ footer {
     background: rgba(214, 242, 255, 0.3);
 }
 
+@media only screen and (max-width: 770px) {
+
+    .search-div {
+        /* margin: 1px; */
+        /* width: 100%; */
+        align-items: center;
+    }
+
+    .search-div i {
+        font-size: 24px;
+    }
+
+    .search-div img {
+        width: 24px;
+    }
+    
+}
+
 @media only screen and (max-width: 450px){
-	.updates-details div, .search-div  {
+	.updates-details div {
         margin: 1px;
         width: 100%;
     }
+
+    
 
     .updates-details div:first-child {
         text-align: center;
