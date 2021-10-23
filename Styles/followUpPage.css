@@ -293,13 +293,10 @@ border-radius: 8px;
     width: 800px;
 }
 
-<<<<<<< HEAD
-=======
 footer {
     background: rgba(214, 242, 255, 0.3);
 }
 
->>>>>>> 03554399920d5dc2d61257854613a80e5afd945f
 @media only screen and (max-width: 450px){
 	.updates-details div, .search-div  {
         margin: 1px;
