@@ -245,7 +245,7 @@ border-radius: 20px;
     background: #F8F8F8;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
-min-height: 180px;
+min-height: 50px;
 min-width: 50%;
 display: inline-block;
 vertical-align: middle;
@@ -329,5 +329,13 @@ footer {
 
     .updates-details div:first-child {
         text-align: center;
+    }
+
+    .img-upload {
+        background: rgba(196, 196, 196, 0.05);
+        border: none;
+        border-radius: 20
+    px
+    ;
     }
 }
