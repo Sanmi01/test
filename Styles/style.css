@@ -85,6 +85,16 @@ padding: 0 60px;
 }
 
 
+@media(max-width: 1000px)  {
+    .navbar-collapse {
+        flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    }
+    
+}
+
+
 
 
 @media(max-width: 768px) {

@@ -301,6 +301,15 @@ footer {
     background: rgba(214, 242, 255, 0.3);
 }
 
+@media(max-width: 1000px)  {
+    .navbar-collapse {
+        flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    }
+    
+}
+
 @media only screen and (max-width: 770px) {
 
     .search-div {
@@ -334,8 +343,18 @@ footer {
     .img-upload {
         background: rgba(196, 196, 196, 0.05);
         border: none;
-        border-radius: 20
-    px
-    ;
+        border-radius: 20px;
+    }
+
+    .img-upload img {
+        width: 40px;
+    }
+
+    .submit-img {
+        padding: 5px;
+    }
+
+    .img-preview {
+        min-height: 36px;
     }
 }
